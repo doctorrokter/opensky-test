@@ -11,7 +11,7 @@ public class Util {
     }
 
     public static String getEnv() {
-        String env = System.getProperty("ACTIVE_ENV");
+        String env = System.getenv("ACTIVE_ENV");
         if (env == null || env.isEmpty()) {
             return "development";
         } else {
