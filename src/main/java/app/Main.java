@@ -64,7 +64,8 @@ public class Main {
             Map<String, Object> userMap = req.session().attribute("user");
             params.put("user", gson.toJson(userMap));
             params.put("message", "Loading...");
-            params.put("env", getEnv());
+//            params.put("env", getEnv());
+            params.put("env", "production");
             return render(params, "dashboard.ftl");
         });
 
