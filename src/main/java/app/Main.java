@@ -35,7 +35,8 @@ public class Main {
         airports.add(new Airport(4189, "Los Angeles International", "LAX", "US", "LAX"));
         airports.add(new Airport(411, "Hartsfield-jackson Atlanta International", "ATL", "US", "ATL"));
 
-        port(8080);
+//        port(8080);
+        port(Integer.valueOf(System.getenv("PORT")));
 
         staticFileLocation("/public");
 
